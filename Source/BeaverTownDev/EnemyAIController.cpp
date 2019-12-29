@@ -21,11 +21,11 @@ AEnemyAIController::AEnemyAIController()
 	LocationToGoKey = "LocationToGo";
 }
 
-void AEnemyAIController::Possess(APawn* Pawn)
+void AEnemyAIController::OnPossess(APawn* Pawn)
 {
-	Super::Possess(Pawn);
+	Super::OnPossess(Pawn);
 
-	EnemyAI = Cast<AEnemyAI>(Pawn);
+	//EnemyAI = Cast<AEnemyAI>(Pawn);
 
 	if (EnemyAI)
 	{

@@ -41,7 +41,7 @@ private:
 	bool IsAttacking = false;
 
 	void AttackDelayEnd();
-	virtual void Possess(APawn* Pawn) override;
+	virtual void OnPossess(APawn* Pawn) override;
 
 public:
 
